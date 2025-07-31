@@ -1,0 +1,160 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <!-- Added comment: For ChainTest reporting, you need both chaintest-testng and chaintest-core dependencies -->
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>Gooru.AIV1</groupId>
+  <artifactId>Gooru.AIV1</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>Gooru.AI</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+<!-- Plug-ins required for executing Tests  -->
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+		<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.0.0-M7</version>
+				<configuration>
+				<useFile>true</useFile>
+        <reportsDirectory>target/surefire-reports</reportsDirectory>
+					<suiteXmlFiles>
+						<!-- TestNG suite XML files -->
+						<suiteXmlFile>testng.xml</suiteXmlFile>
+					</suiteXmlFiles>
+				</configuration>
+			</plugin>
+		
+		</plugins>
+	
+	</build>
+
+<!-- Dependencies required for Project -->
+
+  <dependencies>
+    
+	<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>4.29.0</version>
+</dependency>
+<dependency>
+    <groupId>javax.mail</groupId>
+    <artifactId>javax.mail-api</artifactId>
+    <version>1.6.2</version>
+</dependency>
+
+
+	<!-- https://mvnrepository.com/artifact/com.mysql/mysql-connector-j -->
+<dependency>
+    <groupId>com.mysql</groupId>
+    <artifactId>mysql-connector-j</artifactId>
+    <version>9.1.0</version>
+</dependency>
+
+<dependency>
+    <groupId>com.microsoft.sqlserver</groupId>
+    <artifactId>mssql-jdbc</artifactId>
+    <version>11.2.2.jre11</version> <!-- Use the latest version -->
+</dependency>
+
+<dependency>
+    <groupId>com.aventstack</groupId>
+    <artifactId>chaintest-testng</artifactId>
+    <version>1.0.0</version>
+</dependency>
+
+<dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>6.8.1</version>
+    <scope>test</scope>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/ch.qos.logback/logback-classic -->
+<dependency>
+    <groupId>ch.qos.logback</groupId>
+    <artifactId>logback-classic</artifactId>
+    <version>1.5.16</version>
+    <scope>compile</scope>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.freemarker/freemarker -->
+<dependency>
+    <groupId>org.freemarker</groupId>
+    <artifactId>freemarker</artifactId>
+    <version>2.3.34</version>
+</dependency>
+  	<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>3.17</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>3.17</version>
+		</dependency>
+		
+	<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>1.3.2</version>
+		</dependency>
+		<dependency>
+    <groupId>commons-io</groupId>
+    <artifactId>commons-io</artifactId>
+    <version>2.7</version>
+</dependency>	
+		
+    <!-- SLF4J API -->
+    <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-api</artifactId>
+        <version>2.0.9</version>
+    </dependency>
+
+    <!-- Logback Classic (Recommended SLF4J Implementation) -->
+    <dependency>
+        <groupId>ch.qos.logback</groupId>
+        <artifactId>logback-classic</artifactId>
+        <version>1.4.14</version>
+    </dependency>
+			
+		<dependency>
+		    <groupId>log4j</groupId>
+		    <artifactId>log4j</artifactId>
+		    <version>1.2.17</version>
+		</dependency>
+		<dependency>
+    <groupId>io.github.bonigarcia</groupId>
+    <artifactId>webdrivermanager</artifactId>
+    <version>5.7.0</version>
+</dependency>
+  
+  </dependencies>
+   
+</project>

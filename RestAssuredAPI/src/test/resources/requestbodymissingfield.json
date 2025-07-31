@@ -1,0 +1,12 @@
+{
+  "firstName": 
+  "lastName": 
+  "userName": "ss008",
+  "password": "Test@1234",
+  "phoneNumber": "8146463980",
+  "emailAddress": "ss.dwivedi@techrbm.com",
+  "dateOfBirth": "2024-12-06T10:30:15.156Z",
+  "joinDate": "2024-12-06T10:30:15.156Z",
+  "countryId": 1,
+    "isActive": true
+}

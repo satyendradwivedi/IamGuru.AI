@@ -1,0 +1,11 @@
+{"firstName":"Teacher",
+  "lastName": "KUmar",
+  "userName": "Teacher",
+  "password": "Test@1234",
+  "phoneNumber": "3636630035",
+  "emailAddress": "prilleframmeibru-5203@yopmail.com",
+  "dateOfBirth": "2000-01-13T07:47:41.963Z",
+  "joinDate": "2025-01-23T07:47:41.963Z",
+  "countryId": 1,
+  "roleId": 2
+  }

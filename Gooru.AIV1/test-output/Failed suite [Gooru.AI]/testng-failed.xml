@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Failed suite [Gooru.AI]]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.Gooru.AI.utilities.Reporting"/>
+  </listeners>
+  <test thread-count="5" name="Education Domain(failed)(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.Gooru.AI.testCases.RegisterTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="registeredUserLogin"/>
+          <include name="setup"/>
+          <include name="registrationFormTest"/>
+          <include name="setup"/>
+          <include name="LoginTestResetPassword"/>
+          <include name="emailVerification"/>
+          <include name="resetPassword"/>
+        </methods>
+      </class> <!-- com.Gooru.AI.testCases.RegisterTest -->
+    </classes>
+  </test> <!-- Education Domain(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Gooru.AI]] -->

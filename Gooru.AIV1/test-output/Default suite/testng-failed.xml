@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="com.Gooru.AI.testCases.Regression">
+        <methods>
+          <include name="createPostWithphotovideos"/>
+          <include name="tearDown"/>
+          <include name="profileComplete100"/>
+          <include name="createPostWithPdfUpload"/>
+          <include name="emailVerification"/>
+          <include name="schedulePost"/>
+          <include name="setup"/>
+          <include name="registrationFormTest"/>
+          <include name="registeredUserLogin"/>
+          <include name="setUp"/>
+          <include name="profileCompleteMandatory"/>
+          <include name="explore"/>
+        </methods>
+      </class> <!-- com.Gooru.AI.testCases.Regression -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

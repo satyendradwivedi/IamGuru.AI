@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Gooru.AI">
+
+<listeners>
+	<listener class-name="com.aventstack.chaintest.plugins.ChainTestListener"/>
+</listeners>
+
+<test name="E-Socio Learning Domain">
+	<parameter name="browser" value="chrome"></parameter>
+	<parameter name="browser" value="chrome"/>
+	<classes>
+		<!--<class name="com.Gooru.AI.testCases.MessagingTest" />-->
+		<class name="com.Gooru.AI.testCases.Regression"/>
+		</classes>
+</test>
+
+</suite>	

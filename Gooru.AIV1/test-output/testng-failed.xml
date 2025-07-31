@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Gooru.AI]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.aventstack.chaintest.plugins.ChainTestListener"/>
+  </listeners>
+  <test thread-count="5" name="E-Socio Learning Domain(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.Gooru.AI.testCases.Regression">
+        <methods>
+          <include name="validategooruisabletoaccessCreateCousrescreen"/>
+          <include name="validateGooruisabletoaccesscoursemanagement"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="validateGooruisabletoselectsubcategory"/>
+          <include name="validateGooruisabletoentercoursetitle"/>
+          <include name="validateGooruisabletoentercoursedescription"/>
+          <include name="setUp"/>
+          <include name="validateGooruisabletoselectCategory"/>
+        </methods>
+      </class> <!-- com.Gooru.AI.testCases.Regression -->
+    </classes>
+  </test> <!-- E-Socio Learning Domain(failed) -->
+</suite> <!-- Failed suite [Gooru.AI] -->
